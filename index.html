@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lokinsafe - Coming Soon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Video background */
+    .video-bg {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    /* Navigation bar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.797);
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      z-index: 2;
+    }
+
+    .navbar img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar span {
+      font-size: 1.4em;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Overlay text */
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      z-index: 1;
+      /*background: rgba(0, 0, 0, 0);*/
+      padding: 40px;
+      border-radius: 12px;
+    }
+
+    .overlay h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .overlay p {
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video background -->
+  <video autoplay muted loop class="video-bg">
+    <source src="sea.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Top navbar -->
+  <div class="navbar">
+    <img src="logo1.png" alt="Lokinsafe Logo">
+    <span>Lokinsafe</span>
+  </div>
+
+  <!-- Overlay content -->
+  <div class="overlay">
+    <h1>Coming Soon</h1>
+    <p>We're building a smarter way to keep your things safe at the beach.</p>
+  </div>
+
+</body>
+</html>
